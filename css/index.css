@@ -133,5 +133,29 @@ table {
 html,
 body {
   height: 100%;
-  /* background-color:red; */
+  margin: 20px;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav a {
+  padding: 10px;
+}
+.top-content h1 {
+  text-align: center;
+  border: 1px solid blue;
+}
+.middle-content {
+  display: flex;
+  padding: 10px;
+}
+.middle-content .about-me {
+  border: 1px solid green;
+  margin: 10px 10px 0 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.middle-content .skills {
+  border: 1px solid red;
 }
