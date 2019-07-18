@@ -142,20 +142,58 @@ header {
 header nav a {
   padding: 10px;
 }
+.top-content {
+  border-bottom: 1px solid black;
+}
 .top-content h1 {
-  text-align: center;
-  border: 1px solid blue;
+  font-size: 20px;
+  margin: 10px;
+}
+.top-content h2 {
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+}
+.top-content p {
+  margin: 10px;
+}
+.top-content button {
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.top-content .pic {
+  max-width: 50%;
+  height: auto;
 }
 .middle-content {
   display: flex;
-  padding: 10px;
+  border-bottom: 1px solid black;
 }
 .middle-content .about-me {
-  border: 1px solid green;
-  margin: 10px 10px 0 0;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  padding: 10px;
+  width: 50%;
+}
+.middle-content .about-me h1 {
+  font-size: 20px;
 }
 .middle-content .skills {
-  border: 1px solid red;
+  padding: 10px;
+  width: 50%;
+}
+.middle-content .skills h1 {
+  font-size: 20px;
+}
+.work-history {
+  display: flex;
+}
+.work-history h1 {
+  font-size: 20px;
+  padding: 10px;
+}
+.work-history .companies {
+  padding: 10px;
+}
+.work-history .companies ol {
+  border: 1px solid black;
 }

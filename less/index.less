@@ -68,29 +68,89 @@ header nav a{
 	padding: 10px;
 }
 
+.font(){
+	font-size: 20px;
+}
 
 .top-content{
+	border-bottom: 1px solid black;
 		h1{
-			text-align: center;
-			border: 1px solid blue;
+			// text-align: right;
+			.font();
+			margin: 10px;
 		}
+
+		h2{
+			margin: 0;
+			padding: 10px;
+			.font();
+		}
+
+		p{
+			margin: 10px;
+		}
+
+		button{
+			margin: 10px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.pic{
+			max-width: 50%;
+			height: auto;
+		}
+
+
 }
 
 // Middle Content
 .middle-content{
 	display: flex;
-	padding: 10px;
+	// padding: 10px;
 	// justify-content: flex-end;
 
 	.about-me{
-		border: 1px solid green;
-		margin: 10px 10px 0 0;
-		flex-wrap: wrap;
-		justify-content: flex-start;
+		padding: 10px;
+		// margin: 10px;
+		// flex-wrap: wrap;
+		// justify-content: flex-start;
+		width: 50%;
+
+		h1{
+			.font();
+		}
 	}
+
 
 	.skills{
-		border: 1px solid red;
+		padding: 10px;
+		// border: 1px solid red;
+		width: 50%;
+
+		h1{
+			.font();
+		}
 	}
+	border-bottom: 1px solid black;
 }
 
+// Work-History
+
+.work-history{
+	display: flex;
+
+	h1{
+		.font();
+		padding: 10px;
+	}
+
+	.companies{
+		padding: 10px;
+
+		ol{
+			border: 1px solid black;
+		}
+	}
+
+}
