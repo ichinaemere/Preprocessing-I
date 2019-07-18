@@ -72,6 +72,10 @@ header nav a{
 	font-size: 20px;
 }
 
+.padding(){
+	padding: 10px;
+}
+
 .top-content{
 	border-bottom: 1px solid black;
 		h1{
@@ -82,7 +86,7 @@ header nav a{
 
 		h2{
 			margin: 0;
-			padding: 10px;
+			.padding();
 			.font();
 		}
 
@@ -92,6 +96,7 @@ header nav a{
 
 		button{
 			margin: 10px;
+			display: flex;
 			justify-content: center;
 			align-items: center;
 		}
@@ -111,13 +116,14 @@ header nav a{
 	// justify-content: flex-end;
 
 	.about-me{
-		padding: 10px;
+		.padding();
 		// margin: 10px;
 		// flex-wrap: wrap;
 		// justify-content: flex-start;
 		width: 50%;
 
 		h1{
+			.padding();
 			.font();
 		}
 	}
@@ -142,15 +148,22 @@ header nav a{
 
 	h1{
 		.font();
-		padding: 10px;
+		.padding();
 	}
 
 	.companies{
-		padding: 10px;
+		.padding();
 
 		ol{
 			border: 1px solid black;
 		}
 	}
 
+}
+
+footer{
+	display: flex;
+	margin: 150px;
+	justify-content: center;
+	
 }

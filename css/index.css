@@ -159,6 +159,7 @@ header nav a {
 }
 .top-content button {
   margin: 10px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -175,6 +176,7 @@ header nav a {
   width: 50%;
 }
 .middle-content .about-me h1 {
+  padding: 10px;
   font-size: 20px;
 }
 .middle-content .skills {
@@ -196,4 +198,9 @@ header nav a {
 }
 .work-history .companies ol {
   border: 1px solid black;
+}
+footer {
+  display: flex;
+  margin: 150px;
+  justify-content: center;
 }
