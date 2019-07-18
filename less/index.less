@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: @background-color;
 }
 ol, ul {
 	list-style: none;
@@ -53,7 +54,132 @@ table {
     box-sizing: border-box;
 }
 
+
 html, body {
-    height: 100%;
+	height: 100%;
+	margin: 20px;
+	// color: @background-color;
 }
 
+header{
+	display: flex;
+	justify-content: flex-end;
+}
+
+header nav a{
+	padding: 10px;
+}
+
+@background-color: lavender;
+
+.font(){
+	font-size: 20px;
+}
+
+.padding(){
+	padding: 10px;
+}
+
+.top-content{
+	border-bottom: 1px solid black;
+		h1{
+			// text-align: right;
+			.font();
+			margin: 10px;
+			font-size: 50px;
+		}
+
+		h2{
+			margin: 0;
+			.padding();
+			.font();
+		}
+
+		p{
+			margin: 10px;
+		}
+
+		.button{
+			margin: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px;
+			
+		}
+
+		.pic{
+			max-width: 50%;
+			height: auto;
+		}
+
+
+}
+
+// Middle Content
+.middle-content{
+	display: flex;
+	// padding: 10px;
+	// justify-content: flex-end;
+
+	.about-me{
+		.padding();
+		// margin: 10px;
+		// flex-wrap: wrap;
+		// justify-content: flex-start;
+		width: 50%;
+
+		h1{
+			.padding();
+			.font();
+		}
+	}
+
+
+	.skills{
+		padding: 10px;
+		// border: 1px solid red;
+		width: 50%;
+
+		h1{
+			.font();
+		}
+	}
+	border-bottom: 1px solid black;
+}
+
+// Work-History
+
+.work-history{
+	display: flex;
+
+	h1{
+		.font();
+		.padding();
+	}
+
+	.companies{
+		.padding();
+
+		ol{
+			border: 1px solid black;
+		}
+	}
+
+}
+
+footer{
+	display: flex;
+	margin: 150px;
+	justify-content: center;
+	
+}
+
+@media screen and (max-width: 500px){
+	header nav a{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
